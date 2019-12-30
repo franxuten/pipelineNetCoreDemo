@@ -13,8 +13,8 @@ variables:
   buildConfiguration: 'Debug'
 
 steps:
-- bash: echo 'Compilando proyecto....'
+- bash: echo "Compilando proyecto...."
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 - script: donet test
-- bash: echo 'Compilación finalizada'
+- bash: echo "Compilación finalizada"
