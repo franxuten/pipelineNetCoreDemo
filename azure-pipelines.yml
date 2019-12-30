@@ -16,5 +16,5 @@ steps:
 - bash: echo "Compilando proyecto...."
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- script: donet test
+- script: dotnet test
 - bash: echo "Compilación finalizada"
